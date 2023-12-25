@@ -15,10 +15,10 @@ import Search from "../assets/icons/search.png";
 
 const profile = () => {
   const data = [
-    { id: "1", type: "Mutfak", description: "100", alacak: "100", net: "0" },
-    { id: "2", type: "Deneme Öğrenci", description: "100", alacak: "100", net: "0" },
-    { id: "3", type: "Halı Saha", description: "200", alacak: "200", net: "0" },
-    // ... Diğer öğeler
+    { id: "1", type: "Mutfak", description: "0", alacak: "50", net: "50" },
+    { id: "2", type: "Deneme Öğrenci", description: "0", alacak: "0", net: "0" },
+    { id: "3", type: "Halı Saha", description: "100", alacak: "0", net: "-100" },
+    { id: "4", type: "Toplam ", description: "100", alacak: "50", net: "-50" },
   ];
 
   const renderItem = ({ item }) => (

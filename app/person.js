@@ -15,27 +15,27 @@ import React, { useCallback, useMemo, useRef } from 'react';
 const peronData= [
     {
         title: "Ali Mithad",
-        borcMiktarı: 0,
+        borcMiktarı: 50,
         alacakMiktarı: 0,
     },
     {
         title: "Ulaş",
         borcMiktarı: 0,
-        alacakMiktarı: 0,
+        alacakMiktarı: 100,
     },
     {
         title: "Kerim",
         borcMiktarı: 0,
-        alacakMiktarı: 0,
+        alacakMiktarı: 50,
     },
     {
         title: "Şeref",
-        borcMiktarı: 0,
-        alacakMiktarı: 0,
+        borcMiktarı: 100,
+        alacakMiktarı: 100,
     },
     {
         title: "Ali",
-        borcMiktarı: 0,
+        borcMiktarı: 100,
         alacakMiktarı: 0,
     },
 ]
@@ -68,7 +68,7 @@ const person = () =>{
             <View style={styles.personSection}>
               <Text style={styles.personTitle}>Ali Mithad</Text>
               <View style={styles.personPay}>
-                <Text style={styles.payTitle}>Borç Miktarı: 0 TL</Text>
+                <Text style={styles.payTitle}>Borç Miktarı: 50 TL</Text>
                 <Text style={styles.payTitle}>Alacak Miktarı: 0 TL</Text>
               </View>
             </View>
@@ -77,7 +77,7 @@ const person = () =>{
               <Text style={styles.personTitle}>Ulaş</Text>
               <View style={styles.personPay}>
                 <Text style={styles.payTitle}>Borç Miktarı: 0 TL</Text>
-                <Text style={styles.payTitle}>Alacak Miktarı: 0 TL</Text>
+                <Text style={styles.payTitle}>Alacak Miktarı: 100 TL</Text>
               </View>
             </View>
 
@@ -85,22 +85,22 @@ const person = () =>{
               <Text style={styles.personTitle}>Kerim</Text>
               <View style={styles.personPay}>
                 <Text style={styles.payTitle}>Borç Miktarı: 0 TL</Text>
-                <Text style={styles.payTitle}>Alacak Miktarı: 0 TL</Text>
+                <Text style={styles.payTitle}>Alacak Miktarı: 50 TL</Text>
               </View>
             </View>
 
             <View style={styles.personSection}>
               <Text style={styles.personTitle}>Şeref</Text>
               <View style={styles.personPay}>
-                <Text style={styles.payTitle}>Borç Miktarı: 0 TL</Text>
-                <Text style={styles.payTitle}>Alacak Miktarı: 0 TL</Text>
+                <Text style={styles.payTitle}>Borç Miktarı: 100 TL</Text>
+                <Text style={styles.payTitle}>Alacak Miktarı: 100 TL</Text>
               </View>
             </View>
 
             <View style={styles.personSection}>
               <Text style={styles.personTitle}>Ali</Text>
               <View style={styles.personPay}>
-                <Text style={styles.payTitle}>Borç Miktarı: 0 TL</Text>
+                <Text style={styles.payTitle}>Borç Miktarı: 100 TL</Text>
                 <Text style={styles.payTitle}>Alacak Miktarı: 0 TL</Text>
               </View>
             </View>

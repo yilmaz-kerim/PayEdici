@@ -15,50 +15,47 @@ import ImagesPay from "../assets/images/online-payment-security-concept-3d-phone
 const groupdata= [
     {
         title: "Mutfak",
-        href: "/group",
-    },
-    {
-        title: "Deneme Öğrenci",
         href: "/person",
     },
     {
+        title: "Deneme Öğrenci",
+        href: "/person2",
+    },
+    {
         title: "Halı Saha",
-        href: "/paydebt",
-    },
-    {
-        title: "cmt_2023-12-16",
-        href: "/grouppay",
-    },
-    {
-        title: "cmt-2023-12-16_v1",
-        href: "/profile",
+        href: "/person3",
     },
 ]
-const group = () =>{
-    return(
+
+
+const group = () => {
+    return (
         <ScrollView contentContainerStyle={styles.container}>
-        <View>
-            
-            <View style={styles.headerContainer}>
-            <Text style={styles.headerTitle}>Gruplar</Text>
-            </View>
             <View>
-            
+                <View style={styles.headerContainer}>
+                    <Text style={styles.headerTitle}>Gruplar</Text>
+                </View>
                 <View style={styles.selectSection}>
                     <FlatList
-                    numColumns={2} 
-                    data={groupdata}
-                    renderItem={({ item })=>(
-                        <TouchableOpacity style={styles.selectSectionBtn} onPress={()=>router.replace("/person")}>
-                            <Text style={styles.selectTitle}>{item.title}</Text> 
-                        </TouchableOpacity>
-                    )} keyExtractor={(item, index) => index.toString()}/>
+                        numColumns={2} 
+                        data={groupdata}
+                        renderItem={({ item }) => (
+                            <TouchableOpacity 
+                                style={styles.selectSectionBtn} 
+                                onPress={() => router.replace(item.href)}>
+                                <Text style={styles.selectTitle}>{item.title}</Text> 
+                            </TouchableOpacity>
+                        )}
+                        keyExtractor={(item, index) => index.toString()}
+                    />
                 </View>
             </View>
-        </View>
         </ScrollView>
-    )
-}
+    );
+};
+
+
+
 
 export default group;
 
